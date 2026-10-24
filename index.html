@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정재훈 포트폴리오 · DEV PACK</title>
+<meta name="description" content="삼성전자 MX사업부 개발자 정재훈의 포트폴리오. LLM Agent와 AI 코딩 에이전트로 만든 개인 프로젝트 14개를 카드로 정리했습니다.">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="./assets/css/style.css">
+<script>(function(){try{if(!location.hash||location.hash==='#top'){document.documentElement.classList.add('has-intro');}}catch(e){}})();</script>
+<script src="./assets/js/data.js" defer></script>
+<script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+<symbol id="cr-owl" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#3b7bd8" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#3b7bd8" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#3b7bd8" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M46 54 L40 28 L64 44 Z" fill="#d9cfb8"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M114 54 L120 28 L96 44 Z" fill="#d9cfb8"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="40" cy="104" rx="12" ry="24" fill="#d9cfb8" transform="rotate(12 40 104)"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="120" cy="104" rx="12" ry="24" fill="#d9cfb8" transform="rotate(-12 120 104)"></ellipse>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="40" y="38" width="80" height="104" rx="34" fill="#f4efe3"></rect>
+<ellipse cx="80" cy="110" rx="26" ry="24" fill="#ffffff"></ellipse>
+<path d="M68 110 L76 118 L93 100" stroke="#2f6bff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<circle cx="63" cy="72" r="16" fill="#ffffff" stroke="#2b3a67" stroke-width="4"></circle>
+<circle cx="97" cy="72" r="16" fill="#ffffff" stroke="#2b3a67" stroke-width="4"></circle>
+<path d="M79 72 L81 72" stroke="#2b3a67" stroke-width="4"></path>
+<circle cx="65" cy="74" r="7" fill="#1b1d2a"></circle>
+<circle cx="99" cy="74" r="7" fill="#1b1d2a"></circle>
+<circle cx="62" cy="71" r="2.5" fill="#ffffff"></circle>
+<circle cx="96" cy="71" r="2.5" fill="#ffffff"></circle>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M74 88 L86 88 L80 97 Z" fill="#f2a33a"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="66" cy="144" rx="8" ry="4" fill="#f2a33a"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="94" cy="144" rx="8" ry="4" fill="#f2a33a"></ellipse>
+<g transform="translate(139.0 68.0) scale(1.35) translate(-139.0 -68.0)">
+<path d="M126 78 L120 102" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M126 78 L120 102" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="120" y="58" width="38" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="122" y="60" width="34" height="4" rx="2" fill="#3b7bd8"></rect>
+<text x="139.0" y="73.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">Python</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-cat" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#3178c6" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#3178c6" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#3178c6" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path d="M110 124 C142 122 144 82 128 62" stroke="#20243a" stroke-width="15" fill="none" stroke-linecap="round"></path>
+<path d="M110 124 C142 122 144 82 128 62" stroke="#ff8fb1" stroke-width="9" fill="none" stroke-linecap="round"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M122 66 L124 44 L136 60 Z" fill="#2b2d42"></path>
+<path d="M128 50 L129 58" stroke="#ffd76e" stroke-width="2"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="76" cy="116" rx="34" ry="28" fill="#ffb3c9"></ellipse>
+<ellipse cx="76" cy="122" rx="18" ry="14" fill="#fff0f5"></ellipse>
+<path d="M68 118 H84 M68 124 H80 M68 130 H76" stroke="#ff8fb1" stroke-width="2.5" stroke-linecap="round"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M50 56 L46 26 L72 44 Z" fill="#ffc2d4"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M102 56 L106 26 L80 44 Z" fill="#ffc2d4"></path>
+<path d="M52 50 L50 34 L64 44 Z" fill="#ff8fb1"></path>
+<path d="M100 50 L102 34 L88 44 Z" fill="#ff8fb1"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="76" cy="72" r="32" fill="#ffc2d4"></circle>
+<ellipse cx="63" cy="70" rx="8" ry="9" fill="#1b1d2a"></ellipse>
+<ellipse cx="89" cy="70" rx="8" ry="9" fill="#1b1d2a"></ellipse>
+<circle cx="60" cy="67" r="3" fill="#ffffff"></circle>
+<circle cx="86" cy="67" r="3" fill="#ffffff"></circle>
+<ellipse cx="54" cy="84" rx="6" ry="4" fill="#ff8fb1" opacity=".7"></ellipse>
+<ellipse cx="98" cy="84" rx="6" ry="4" fill="#ff8fb1" opacity=".7"></ellipse>
+<path d="M73 80 L79 80 L76 84 Z" fill="#ff6f91"></path>
+<path d="M70 88 Q73 92 76 88 Q79 92 82 88" stroke="#20243a" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+<path d="M40 78 L54 80 M40 86 L54 85 M112 78 L98 80 M112 86 L98 85" stroke="#20243a" stroke-width="2" stroke-linecap="round"></path>
+<g transform="translate(24.0 104.0) scale(1.35) translate(-24.0 -104.0)">
+<path d="M36 114 L46 124" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M36 114 L46 124" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="4" y="94" width="40" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="6" y="96" width="36" height="4" rx="2" fill="#3178c6"></rect>
+<text x="24.0" y="109.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">TS</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-whale" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#3c873a" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#3c873a" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#3c873a" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M122 96 C136 74 150 78 148 62 C158 82 154 102 128 108 Z" fill="#3aa0ff"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="74" cy="102" rx="54" ry="38" fill="#3aa0ff"></ellipse>
+<path d="M28 112 C44 136 106 138 124 112 Z" fill="#bfe4ff"></path>
+<ellipse cx="74" cy="102" rx="20" ry="38" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="2"></ellipse>
+<path d="M20 102 H128 M28 84 H120" stroke="rgba(255,255,255,.45)" stroke-width="2"></path>
+<ellipse cx="52" cy="96" rx="9" ry="10" fill="#ffffff"></ellipse>
+<circle cx="53" cy="98" r="5.5" fill="#1b1d2a"></circle>
+<circle cx="51" cy="95" r="2" fill="#ffffff"></circle>
+<path d="M40 114 Q50 122 60 114" stroke="#20243a" stroke-width="3" fill="none" stroke-linecap="round"></path>
+<ellipse cx="38" cy="108" rx="6" ry="3.5" fill="#ff8fb1" opacity=".7"></ellipse>
+<path d="M76 64 C74 54 70 50 66 46 M78 64 C80 52 86 46 92 42" stroke="#9fd8ff" stroke-width="3" fill="none" stroke-linecap="round"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="58" cy="36" r="11" fill="#ffffff"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="84" cy="24" r="11" fill="#ffffff"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="108" cy="36" r="11" fill="#ffffff"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="36" cy="56" r="11" fill="#ffffff"></circle>
+<text x="58" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#1e62c9">가</text>
+<text x="84" y="28" text-anchor="middle" font-size="11" font-weight="700" fill="#1e62c9">A</text>
+<text x="108" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#1e62c9">简</text>
+<text x="36" y="60" text-anchor="middle" font-size="11" font-weight="700" fill="#1e62c9">繁</text>
+<g transform="translate(140.0 22.0) scale(1.35) translate(-140.0 -22.0)">
+<path d="M140 32 L140 66" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M140 32 L140 66" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="122" y="12" width="36" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="124" y="14" width="32" height="4" rx="2" fill="#3c873a"></rect>
+<text x="140.0" y="27.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">Node</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-bear" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#e8c23a" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#e8c23a" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#e8c23a" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="52" cy="42" r="13" fill="#c9803d"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="108" cy="42" r="13" fill="#c9803d"></circle>
+<circle cx="52" cy="42" r="6" fill="#f2c08a"></circle>
+<circle cx="108" cy="42" r="6" fill="#f2c08a"></circle>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="120" rx="32" ry="26" fill="#d98f47"></ellipse>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="66" r="32" fill="#d98f47"></circle>
+<ellipse cx="80" cy="80" rx="15" ry="11" fill="#f5d3a8"></ellipse>
+<ellipse cx="80" cy="75" rx="6" ry="4.5" fill="#3a2414"></ellipse>
+<path d="M74 84 Q80 89 86 84" stroke="#3a2414" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+<ellipse cx="67" cy="62" rx="6" ry="7" fill="#1b1d2a"></ellipse>
+<ellipse cx="93" cy="62" rx="6" ry="7" fill="#1b1d2a"></ellipse>
+<circle cx="65" cy="60" r="2" fill="#ffffff"></circle>
+<circle cx="91" cy="60" r="2" fill="#ffffff"></circle>
+<ellipse cx="58" cy="76" rx="6" ry="3.5" fill="#ff8f6b" opacity=".6"></ellipse>
+<ellipse cx="102" cy="76" rx="6" ry="3.5" fill="#ff8f6b" opacity=".6"></ellipse>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M80 98 L104 106 V120 C104 134 94 142 80 147 C66 142 56 134 56 120 V106 Z" fill="#2f6bff"></path>
+<path d="M80 106 L98 112 V120 C98 130 90 136 80 140 Z" fill="#5b8cff"></path>
+<path d="M80 110 L84 119 L93 119 L86 125 L89 134 L80 128 L71 134 L74 125 L67 119 L76 119 Z" fill="#ffd76e"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="56" cy="118" r="9" fill="#c9803d"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="104" cy="118" r="9" fill="#c9803d"></circle>
+</g>
+</symbol>
+<symbol id="cr-penguin" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#1f8a5c" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#1f8a5c" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#1f8a5c" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="44" cy="104" rx="10" ry="22" fill="#22325c" transform="rotate(20 44 104)"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="102" rx="36" ry="46" fill="#22325c"></ellipse>
+<ellipse cx="80" cy="112" rx="23" ry="32" fill="#ffffff"></ellipse>
+<ellipse cx="70" cy="80" rx="7" ry="8" fill="#ffffff"></ellipse>
+<ellipse cx="92" cy="80" rx="7" ry="8" fill="#ffffff"></ellipse>
+<circle cx="71" cy="82" r="4.5" fill="#1b1d2a"></circle>
+<circle cx="91" cy="82" r="4.5" fill="#1b1d2a"></circle>
+<circle cx="70" cy="80" r="1.6" fill="#ffffff"></circle>
+<circle cx="90" cy="80" r="1.6" fill="#ffffff"></circle>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M74 90 L88 90 L81 99 Z" fill="#f2a33a"></path>
+<ellipse cx="62" cy="96" rx="5" ry="3" fill="#ff8fb1" opacity=".7"></ellipse>
+<ellipse cx="100" cy="96" rx="5" ry="3" fill="#ff8fb1" opacity=".7"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="58" rx="32" ry="6" fill="#3b3f55"></ellipse>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="62" y="34" width="36" height="24" rx="5" fill="#3b3f55"></rect>
+<rect x="63" y="48" width="34" height="6" fill="#d94a4a"></rect>
+<rect x="84" y="38" width="16" height="10" rx="1.5" fill="#f4f1e8" transform="rotate(-8 92 43)"></rect>
+<text x="92" y="46" text-anchor="middle" font-size="6" font-weight="800" fill="#d94a4a" transform="rotate(-8 92 43)">NEWS</text>
+<g transform="rotate(-10 112 116)">
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="96" y="100" width="36" height="30" rx="2" fill="#f4f1e8"></rect>
+<text x="114" y="111" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8.5" fill="#0c4b33">Django</text>
+<path d="M101 117 H127 M101 123 H120" stroke="#8e96aa" stroke-width="2.5" stroke-linecap="round"></path>
+</g>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="68" cy="147" rx="9" ry="4" fill="#f2a33a"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="92" cy="147" rx="9" ry="4" fill="#f2a33a"></ellipse>
+</g>
+</symbol>
+<symbol id="cr-octopus" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#20a7c9" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#20a7c9" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#20a7c9" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path d="M56 90 C44 110 30 118 30 136 M72 96 C68 116 62 128 64 146 M88 96 C92 116 98 128 96 146 M104 90 C116 110 130 118 130 136" stroke="#20243a" stroke-width="16" fill="none" stroke-linecap="round"></path>
+<path d="M56 90 C44 110 30 118 30 136 M72 96 C68 116 62 128 64 146 M88 96 C92 116 98 128 96 146 M104 90 C116 110 130 118 130 136" stroke="#7c4ce8" stroke-width="10" fill="none" stroke-linecap="round"></path>
+<path d="M56 90 C44 110 30 118 30 136 M72 96 C68 116 62 128 64 146 M88 96 C92 116 98 128 96 146 M104 90 C116 110 130 118 130 136" stroke="#ffffff" stroke-width="3" stroke-dasharray="3 6" fill="none" opacity=".75"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="64" rx="40" ry="38" fill="#9b6bff"></ellipse>
+<ellipse cx="66" cy="66" rx="8" ry="9" fill="#ffffff"></ellipse>
+<ellipse cx="94" cy="66" rx="8" ry="9" fill="#ffffff"></ellipse>
+<circle cx="67" cy="68" r="5" fill="#1b1d2a"></circle>
+<circle cx="95" cy="68" r="5" fill="#1b1d2a"></circle>
+<circle cx="65" cy="65" r="1.8" fill="#ffffff"></circle>
+<circle cx="93" cy="65" r="1.8" fill="#ffffff"></circle>
+<ellipse cx="80" cy="84" rx="5" ry="4" fill="#4a2596"></ellipse>
+<ellipse cx="56" cy="80" rx="6" ry="3.5" fill="#ff8fb1" opacity=".7"></ellipse>
+<ellipse cx="104" cy="80" rx="6" ry="3.5" fill="#ff8fb1" opacity=".7"></ellipse>
+<g transform="rotate(-16 108 30)">
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="94" y="24" width="30" height="14" rx="2" fill="#2b2d42"></rect>
+<path d="M98 24 L102 38 M106 24 L110 38 M114 24 L118 38" stroke="#ffffff" stroke-width="3"></path>
+</g>
+<g transform="translate(22.0 104.0) scale(1.35) translate(-22.0 -104.0)">
+<path d="M22 114 L28 130" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M22 114 L28 130" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="2" y="94" width="40" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="4" y="96" width="36" height="4" rx="2" fill="#20a7c9"></rect>
+<text x="22.0" y="109.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">React</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-chameleon" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#d97757" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#d97757" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#d97757" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path d="M114 108 C140 106 144 132 126 134 C114 135 112 120 122 120" stroke="#20243a" stroke-width="15" fill="none" stroke-linecap="round"></path>
+<path d="M114 108 C140 106 144 132 126 134 C114 135 112 120 122 120" stroke="#5ccf7a" stroke-width="9" fill="none" stroke-linecap="round"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M90 44 L120 58 L90 72 L60 58 Z" fill="#4dd0e1"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M90 32 L120 46 L90 60 L60 46 Z" fill="#ffd54f"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M90 20 L120 34 L90 48 L60 34 Z" fill="#ff8a65"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="86" cy="104" rx="40" ry="30" fill="#5ccf7a"></ellipse>
+<path d="M60 96 Q86 84 112 96" stroke="#3ea85c" stroke-width="3" fill="none"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="50" cy="96" r="26" fill="#6fdc8a"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="46" cy="88" r="14" fill="#6fdc8a"></circle>
+<circle cx="46" cy="88" r="8" fill="#ffffff"></circle>
+<circle cx="44" cy="89" r="4.5" fill="#1b1d2a"></circle>
+<circle cx="43" cy="87" r="1.5" fill="#ffffff"></circle>
+<path d="M30 106 Q40 114 52 108" stroke="#20243a" stroke-width="3" fill="none" stroke-linecap="round"></path>
+<ellipse cx="58" cy="104" rx="5" ry="3" fill="#ff8fb1" opacity=".7"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="66" cy="134" rx="8" ry="5" fill="#4fbd6c"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="104" cy="134" rx="8" ry="5" fill="#4fbd6c"></ellipse>
+<g transform="translate(138.0 78.0) scale(1.35) translate(-138.0 -78.0)">
+<path d="M136 88 L134 106" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M136 88 L134 106" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="120" y="68" width="36" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="122" y="70" width="32" height="4" rx="2" fill="#d97757"></rect>
+<text x="138.0" y="83.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">MCP</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-crab" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#8e96aa" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#8e96aa" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#8e96aa" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path d="M52 104 L36 90 M108 104 L124 90" stroke="#20243a" stroke-width="9" stroke-linecap="round"></path>
+<path d="M52 104 L36 90 M108 104 L124 90" stroke="#e04b2a" stroke-width="5" stroke-linecap="round"></path>
+<path d="M18 92 V62 H48" stroke="#20243a" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M18 92 V62 H48" stroke="#ffd76e" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M142 92 V62 H112" stroke="#20243a" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M142 92 V62 H112" stroke="#ffd76e" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M50 128 L36 140 M58 132 L48 146 M110 128 L124 140 M102 132 L112 146" stroke="#20243a" stroke-width="5" stroke-linecap="round"></path>
+<path d="M70 84 L66 64 M90 84 L94 64" stroke="#20243a" stroke-width="4" stroke-linecap="round"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="108" rx="40" ry="28" fill="#ff6b4a"></ellipse>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="66" cy="60" r="10" fill="#ffffff"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="94" cy="60" r="10" fill="#ffffff"></circle>
+<circle cx="67" cy="61" r="5" fill="#1b1d2a"></circle>
+<circle cx="95" cy="61" r="5" fill="#1b1d2a"></circle>
+<circle cx="65" cy="58" r="1.8" fill="#ffffff"></circle>
+<circle cx="93" cy="58" r="1.8" fill="#ffffff"></circle>
+<path d="M70 112 Q80 120 90 112" stroke="#20243a" stroke-width="3" fill="none" stroke-linecap="round"></path>
+<ellipse cx="58" cy="108" rx="6" ry="3.5" fill="#ffd0c2" opacity=".8"></ellipse>
+<ellipse cx="102" cy="108" rx="6" ry="3.5" fill="#ffd0c2" opacity=".8"></ellipse>
+<g transform="translate(131.0 32.0) scale(1.35) translate(-131.0 -32.0)">
+<path d="M128 42 L128 60" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M128 42 L128 60" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="108" y="22" width="46" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="110" y="24" width="42" height="4" rx="2" fill="#8e96aa"></rect>
+<text x="131.0" y="37.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="7" fill="#ffffff">Express</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-turtle" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#009688" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#009688" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#009688" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="50" cy="132" rx="10" ry="8" fill="#b8d98a"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="108" cy="132" rx="10" ry="8" fill="#b8d98a"></ellipse>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="130" cy="100" r="17" fill="#b8d98a"></circle>
+<circle cx="134" cy="96" r="4.5" fill="#1b1d2a"></circle>
+<circle cx="133" cy="94" r="1.6" fill="#ffffff"></circle>
+<path d="M126 106 Q134 112 142 106" stroke="#20243a" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="78" cy="122" rx="50" ry="12" fill="#b8d98a"></ellipse>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M32 120 C32 76 124 76 124 120 Z" fill="#4f9a5b"></path>
+<path d="M78 84 L94 94 L94 110 L78 118 L62 110 L62 94 Z M62 94 L44 104 M94 94 L112 104 M78 118 V120" stroke="#3c7a46" stroke-width="3" fill="none"></path>
+<path d="M78 48 V84" stroke="#20243a" stroke-width="6" stroke-linecap="round"></path>
+<path d="M78 48 V84" stroke="#ffd76e" stroke-width="3" stroke-linecap="round"></path>
+<path d="M56 56 H100" stroke="#20243a" stroke-width="6" stroke-linecap="round"></path>
+<path d="M56 56 H100" stroke="#ffd76e" stroke-width="3" stroke-linecap="round"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M46 64 Q56 76 66 64 Z" fill="#ffd76e"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M90 64 Q100 76 110 64 Z" fill="#ffd76e"></path>
+<path d="M56 56 L50 64 M56 56 L62 64 M100 56 L94 64 M100 56 L106 64" stroke="#20243a" stroke-width="1.5"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="78" cy="46" r="4" fill="#ffd76e"></circle>
+<g transform="translate(26.0 64.0) scale(1.35) translate(-26.0 -64.0)">
+<path d="M26 74 L40 104" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M26 74 L40 104" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="4" y="54" width="44" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="6" y="56" width="40" height="4" rx="2" fill="#009688"></rect>
+<text x="26.0" y="69.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="7" fill="#ffffff">FastAPI</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-squirrel" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#336791" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#336791" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#336791" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M100 132 C152 124 152 44 112 50 C92 54 98 82 116 82 C124 82 126 90 118 96 C110 104 104 116 100 132 Z" fill="#c77b3e"></path>
+<path d="M112 60 C130 60 138 82 128 100" stroke="#e8a86b" stroke-width="4" fill="none" stroke-linecap="round"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="74" cy="116" rx="28" ry="28" fill="#d58a4a"></ellipse>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M56 58 L52 34 L70 50 Z" fill="#d58a4a"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M92 58 L96 34 L78 50 Z" fill="#d58a4a"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="74" cy="76" r="26" fill="#e09a5a"></circle>
+<ellipse cx="74" cy="86" rx="12" ry="9" fill="#f7d3ae"></ellipse>
+<ellipse cx="74" cy="82" rx="4" ry="3" fill="#3a2414"></ellipse>
+<ellipse cx="63" cy="72" rx="5.5" ry="6.5" fill="#1b1d2a"></ellipse>
+<ellipse cx="85" cy="72" rx="5.5" ry="6.5" fill="#1b1d2a"></ellipse>
+<circle cx="61" cy="70" r="2" fill="#ffffff"></circle>
+<circle cx="83" cy="70" r="2" fill="#ffffff"></circle>
+<ellipse cx="54" cy="84" rx="5" ry="3" fill="#ff8f6b" opacity=".6"></ellipse>
+<ellipse cx="94" cy="84" rx="5" ry="3" fill="#ff8f6b" opacity=".6"></ellipse>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="58" y="98" width="32" height="44" rx="3" fill="#4b6cb7"></rect>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M56 100 L74 88 L92 100 Z" fill="#344f8f"></path>
+<rect x="63" y="106" width="8" height="7" fill="#ffe08a"></rect>
+<rect x="77" y="106" width="8" height="7" fill="#ffe08a"></rect>
+<rect x="63" y="118" width="8" height="7" fill="#ffe08a"></rect>
+<rect x="77" y="118" width="8" height="7" fill="#9fb3d9"></rect>
+<rect x="70" y="130" width="8" height="12" fill="#2b3a67"></rect>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="56" cy="116" r="7" fill="#c77b3e"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="92" cy="116" r="7" fill="#c77b3e"></circle>
+<g transform="translate(31 136) scale(1.3) translate(-31 -136)">
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M16 124 V142 C16 148 46 148 46 142 V124" fill="#336791"></path>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="31" cy="124" rx="15" ry="5" fill="#4a86c0"></ellipse>
+<path d="M16 133 C16 138 46 138 46 133" stroke="#20243a" stroke-width="2" fill="none"></path>
+<text x="31" y="144" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">SQL</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-bat" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#7f52ff" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#7f52ff" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#7f52ff" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M60 90 C40 66 16 72 8 90 C18 88 24 94 26 104 C32 98 40 100 44 110 C48 102 56 100 60 104 Z" fill="#2a9d8f"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M100 90 C120 66 144 72 152 90 C142 88 136 94 134 104 C128 98 120 100 116 110 C112 102 104 100 100 104 Z" fill="#2a9d8f"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M62 72 L58 48 L76 64 Z" fill="#2a9d8f"></path>
+<path stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M98 72 L102 48 L84 64 Z" fill="#2a9d8f"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="94" r="28" fill="#34b3a3"></circle>
+<ellipse cx="80" cy="104" rx="16" ry="12" fill="#a8e6dc"></ellipse>
+<ellipse cx="70" cy="90" rx="6" ry="7" fill="#1b1d2a"></ellipse>
+<ellipse cx="90" cy="90" rx="6" ry="7" fill="#1b1d2a"></ellipse>
+<circle cx="68" cy="88" r="2" fill="#ffffff"></circle>
+<circle cx="88" cy="88" r="2" fill="#ffffff"></circle>
+<path d="M72 104 Q80 110 88 104" stroke="#20243a" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+<path d="M75 105 L77 110 L79 105 M81 105 L83 110 L85 105" fill="#ffffff"></path>
+<path d="M54 90 C54 56 106 56 106 90" stroke="#20243a" stroke-width="9" fill="none" stroke-linecap="round"></path>
+<path d="M54 90 C54 56 106 56 106 90" stroke="#ff4f9a" stroke-width="5" fill="none" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="46" y="84" width="12" height="20" rx="5" fill="#ff4f9a"></rect>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="102" y="84" width="12" height="20" rx="5" fill="#ff4f9a"></rect>
+<g fill="#ffd76e" stroke="#20243a" stroke-width="2">
+<ellipse cx="24" cy="50" rx="6" ry="4.5"></ellipse>
+<ellipse cx="136" cy="44" rx="6" ry="4.5"></ellipse>
+</g>
+<path d="M29 50 V30 L38 34 M141 44 V24 L150 28" stroke="#20243a" stroke-width="3" fill="none" stroke-linecap="round"></path>
+<g transform="translate(80.0 134.0) scale(1.35) translate(-80.0 -134.0)">
+<path d="M66 120 L66 124" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M66 120 L66 124" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="56" y="124" width="48" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="58" y="126" width="44" height="4" rx="2" fill="#7f52ff"></rect>
+<text x="80.0" y="139.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="8" fill="#ffffff">Kotlin</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-firefly" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#ff5c38" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#ff5c38" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#ff5c38" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<circle cx="80" cy="118" r="38" fill="#ffe66d" opacity=".35"></circle>
+<ellipse cx="54" cy="70" rx="18" ry="11" fill="rgba(255,255,255,.75)" stroke="#20243a" stroke-width="2.5" transform="rotate(-30 54 70)"></ellipse>
+<ellipse cx="106" cy="70" rx="18" ry="11" fill="rgba(255,255,255,.75)" stroke="#20243a" stroke-width="2.5" transform="rotate(30 106 70)"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="118" rx="22" ry="24" fill="#ffe66d"></ellipse>
+<text x="80" y="123" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="11" fill="#3d3000">YOLO</text>
+<path d="M70 58 C66 44 58 38 52 36 M90 58 C94 44 102 38 108 36" stroke="#20243a" stroke-width="3" fill="none" stroke-linecap="round"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="52" cy="36" r="5" fill="#ffe66d"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="108" cy="36" r="5" fill="#ffe66d"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="80" cy="80" r="27" fill="#3d4a7a"></circle>
+<circle cx="80" cy="80" r="15" fill="#0f1428" stroke="#9fb3ff" stroke-width="4"></circle>
+<circle cx="80" cy="80" r="7" fill="#4dd0e1"></circle>
+<circle cx="76" cy="76" r="3" fill="#ffffff"></circle>
+<circle cx="99" cy="64" r="3.5" fill="#ff3b5c"></circle>
+<path d="M68 100 Q80 106 92 100" stroke="#9fb3ff" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+</g>
+</symbol>
+<symbol id="cr-giraffe" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#4a86c0" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#4a86c0" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#4a86c0" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="54" y="118" width="10" height="28" rx="4" fill="#f6c453"></rect>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="90" y="118" width="10" height="28" rx="4" fill="#f6c453"></rect>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="78" cy="116" rx="34" ry="20" fill="#f6c453"></ellipse>
+<rect x="56" y="112" width="8" height="12" rx="1.5" fill="#c9822a"></rect>
+<rect x="68" y="106" width="8" height="18" rx="1.5" fill="#c9822a"></rect>
+<rect x="80" y="100" width="8" height="24" rx="1.5" fill="#c9822a"></rect>
+<rect x="92" y="108" width="8" height="16" rx="1.5" fill="#c9822a"></rect>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="74" y="44" width="18" height="70" rx="8" fill="#f6c453"></rect>
+<path d="M78 56 H88 M78 70 H88 M78 84 H88" stroke="#c9822a" stroke-width="4" stroke-linecap="round"></path>
+<path d="M78 30 L76 16 M92 30 L96 16" stroke="#20243a" stroke-width="3" stroke-linecap="round"></path>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="76" cy="15" r="4" fill="#c9822a"></circle>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="96" cy="15" r="4" fill="#c9822a"></circle>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="88" cy="40" rx="20" ry="15" fill="#f6c453"></ellipse>
+<ellipse cx="98" cy="46" rx="10" ry="7" fill="#fbe0a0"></ellipse>
+<circle cx="82" cy="36" r="4.5" fill="#1b1d2a"></circle>
+<circle cx="81" cy="34" r="1.5" fill="#ffffff"></circle>
+<path d="M94 48 Q99 51 104 48" stroke="#20243a" stroke-width="2" fill="none" stroke-linecap="round"></path>
+<ellipse cx="76" cy="46" rx="4" ry="2.5" fill="#ff8f6b" opacity=".6"></ellipse>
+<path d="M112 70 L124 58 M124 58 L116 58 M124 58 L124 66" stroke="#2fbf71" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+<g transform="translate(132.0 88.0) scale(1.35) translate(-132.0 -88.0)">
+<path d="M128 98 L110 112" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M128 98 L110 112" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="110" y="78" width="44" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="112" y="80" width="40" height="4" rx="2" fill="#336791"></rect>
+<text x="132.0" y="93.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="7" fill="#ffffff">PostGIS</text>
+</g>
+</g>
+</symbol>
+<symbol id="cr-bunny" viewBox="-6 -6 172 172">
+<circle cx="80" cy="88" r="66" fill="#0b84f3" opacity=".26"/>
+<circle cx="80" cy="88" r="46" fill="#0b84f3" opacity=".18"/>
+<ellipse cx="80" cy="96" rx="74" ry="22" fill="none" stroke="#0b84f3" stroke-width="2" stroke-dasharray="2 7" opacity=".8" transform="rotate(-14 80 96)"/>
+<ellipse cx="80" cy="150" rx="42" ry="6" fill="rgba(0,0,0,.28)"/>
+<g>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="64" cy="34" rx="10" ry="26" fill="#f7f7fb" transform="rotate(-10 64 34)"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="94" cy="32" rx="10" ry="26" fill="#f7f7fb" transform="rotate(12 94 32)"></ellipse>
+<ellipse cx="64" cy="36" rx="4.5" ry="17" fill="#ffb3c9" transform="rotate(-10 64 36)"></ellipse>
+<ellipse cx="94" cy="34" rx="4.5" ry="17" fill="#ffb3c9" transform="rotate(12 94 34)"></ellipse>
+<ellipse stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="78" cy="122" rx="30" ry="24" fill="#f7f7fb"></ellipse>
+<circle stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" cx="78" cy="78" r="28" fill="#f7f7fb"></circle>
+<ellipse cx="67" cy="76" rx="5.5" ry="6.5" fill="#1b1d2a"></ellipse>
+<ellipse cx="89" cy="76" rx="5.5" ry="6.5" fill="#1b1d2a"></ellipse>
+<circle cx="65" cy="74" r="2" fill="#ffffff"></circle>
+<circle cx="87" cy="74" r="2" fill="#ffffff"></circle>
+<ellipse cx="78" cy="86" rx="4" ry="3" fill="#ff8fb1"></ellipse>
+<path d="M72 92 Q78 96 84 92" stroke="#20243a" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+<ellipse cx="58" cy="88" rx="5.5" ry="3.5" fill="#ffb3c9" opacity=".8"></ellipse>
+<ellipse cx="98" cy="88" rx="5.5" ry="3.5" fill="#ffb3c9" opacity=".8"></ellipse>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="56" y="106" width="44" height="30" rx="6" fill="#2b2d42"></rect>
+<rect x="62" y="101" width="12" height="7" rx="2" fill="#2b2d42"></rect>
+<circle cx="78" cy="121" r="10" fill="#9fb3ff" stroke="#ffffff" stroke-width="3"></circle>
+<circle cx="75" cy="118" r="2.5" fill="#ffffff"></circle>
+<circle cx="93" cy="112" r="2.5" fill="#ffd76e"></circle>
+<path d="M122 60 L125 68 L133 71 L125 74 L122 82 L119 74 L111 71 L119 68 Z" fill="#ffd76e" stroke="#20243a" stroke-width="2" stroke-linejoin="round"></path>
+<g transform="translate(27.0 100.0) scale(1.35) translate(-27.0 -100.0)">
+<path d="M46 110 L56 116" stroke="#20243a" stroke-width="3.5" stroke-linecap="round"></path>
+<path d="M46 110 L56 116" stroke="#b98a52" stroke-width="1.8" stroke-linecap="round"></path>
+<rect stroke="#20243a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" x="2" y="90" width="50" height="20" rx="5" fill="#1b1d2a"></rect>
+<rect x="4" y="92" width="46" height="4" rx="2" fill="#0b84f3"></rect>
+<text x="27.0" y="105.5" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="7" fill="#ffffff">Remotion</text>
+</g>
+</g>
+</symbol>
+</svg>
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title" aria-describedby="intro-sub">
+<div class="intro-bg" aria-hidden="true"><div class="intro-stars"></div><div class="intro-nebula"></div></div>
+<div class="intro-copy">
+<p class="eyebrow">DEV PACK · PORTFOLIO 2026 · <a href="./en.html" lang="en" hreflang="en">English</a></p>
+<p class="intro-title" id="intro-title">안녕하세요, 정재훈입니다.</p>
+<p class="intro-sub" id="intro-sub">저를 소개하는 카드 한 장을 준비했습니다. 카드를 누르거나 옆으로 밀면 열립니다.</p>
+</div>
+<div class="intro-stage">
+<div class="intro-rays" aria-hidden="true"></div>
+<div class="intro-card" role="button" tabindex="0" aria-label="소개 카드 열기">
+<div class="ic-inner">
+<div class="ic-back" aria-hidden="true"><span class="ic-foil"></span><span class="ic-emblem">DEV</span><span class="ic-name">JAEHOON JEONG</span></div>
+<div class="ic-face"></div>
+</div>
+</div>
+<div class="intro-burst" aria-hidden="true"></div>
+</div>
+<p class="intro-hint" aria-hidden="true"><span class="hint-dot"></span>눌러서 열기 · 옆으로 밀어서 열기</p>
+<button type="button" class="intro-skip">건너뛰기</button>
+<div class="intro-flash" aria-hidden="true"></div>
+</div>
+<a class="skip" href="#main">본문 바로가기</a>
+<a class="skip" href="#all">전체 프로젝트 바로 보기</a>
+<header class="site-head">
+<a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">D</span><span>DEV PACK</span></a>
+<nav aria-label="주요 메뉴"><ul>
+<li><a href="#featured">대표 프로젝트</a></li><li><a href="#career">경력</a></li><li><a href="#how">일하는 방식</a></li><li><a href="#cards">다른 프로젝트</a></li><li><a href="#all">전체 프로젝트</a></li>
+<li><a href="./en.html" lang="en" hreflang="en">English</a></li>
+</ul></nav>
+</header>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+<div class="hero-text">
+<p class="eyebrow">PORTFOLIO · 2026</p>
+<h1 id="hero-title">AI 도구를 만들고<br>결과를 검증합니다</h1>
+<p class="lead">삼성전자 MX사업부에서 2014년부터 앱, 클라우드 백엔드, 프론트엔드를 개발했고 지금은 사내 개발 지원 LLM Agent를 만들고 있습니다. 회사 밖에서는 배우자가 운영하는 행정사사무소의 반복 업무를 덜어 줄 도구를 만들어 함께 쓰고 있습니다. 직접 만들고 운영하면서 배운 것들을 프로젝트별로 정리했습니다.</p>
+<div class="cta">
+<a class="btn primary" href="#featured" data-reveal="featured">대표 프로젝트 보기</a>
+<a class="btn" href="#all" data-reveal="all">다른 프로젝트도 둘러보기</a>
+<a class="btn ghost" href="https://github.com/himangga01" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5 M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg>GitHub</a>
+</div>
+<dl class="stats">
+<div><dt>삼성전자 개발</dt><dd>12년+</dd></div>
+<div><dt>정리한 개인 프로젝트</dt><dd>14</dd></div>
+<div><dt>공고 1건 검토 (기존 1~2시간)</dt><dd>약 20분</dd></div>
+</dl>
+</div>
+<div class="hero-card">
+<div class="profile tcard-like" data-tilt>
+<div class="tilt"><div class="frame"><div class="inner">
+<div class="c-head"><span class="c-emb" aria-hidden="true">JH</span><span class="c-titles"><span class="c-cat">소개 카드</span><span class="c-title big">정재훈</span></span><span class="c-stat"><b>12년+</b><small>경력</small></span></div>
+<div class="p-art"><div class="stars" aria-hidden="true"></div><div class="ring" aria-hidden="true"></div><div class="c-types"><span class="badge" style="--b:#c62a2a"><span class="glyph" aria-hidden="true">AI</span>LLM Agent</span><span class="badge" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge" style="--b:#4c812d"><span class="glyph" aria-hidden="true">SB</span>Spring Boot</span></div><svg class="avatar-svg" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="검은 모자를 쓰고 웃고 있는 정재훈 캐릭터">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#dfe7e4"></stop>
+<stop offset="0.38" stop-color="#c9c79a"></stop>
+<stop offset="1" stop-color="#c49a52"></stop>
+</linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f6d5b5"></stop>
+<stop offset="1" stop-color="#ecbd96"></stop>
+</linearGradient>
+<linearGradient id="cap" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#2a2d33"></stop>
+<stop offset="1" stop-color="#0c0d10"></stop>
+</linearGradient>
+</defs>
+<path d="M34 240 C38 196 72 174 120 174 C168 174 202 196 206 240 Z" fill="#17191e"></path>
+<path d="M98 166 L142 166 L140 184 C130 192 110 192 100 184 Z" fill="#e7b58e"></path>
+<ellipse cx="63" cy="120" rx="10" ry="14" fill="#ecbd96"></ellipse>
+<ellipse cx="177" cy="120" rx="10" ry="14" fill="#ecbd96"></ellipse>
+<ellipse cx="120" cy="116" rx="57" ry="60" fill="url(#skin)"></ellipse>
+<path d="M64 104 C64 124 68 132 72 138 L74 108 Z" fill="#1c1b1d"></path>
+<path d="M176 104 C176 124 172 132 168 138 L166 108 Z" fill="#1c1b1d"></path>
+<path d="M62 100 C62 48 178 48 178 100 Z" fill="url(#cap)"></path>
+<path d="M120 52 L120 100" stroke="#34373e" stroke-width="2"></path>
+<circle cx="120" cy="52" r="4" fill="#2f3238"></circle>
+<path d="M58 98 C84 110 160 112 194 96 C196 104 186 110 170 112 C140 116 96 114 62 106 Z" fill="#0b0c0f"></path>
+<text x="120" y="86" text-anchor="middle" font-family="Paperlogy, sans-serif" font-weight="800" font-size="18" fill="#f5f5f2" letter-spacing="1">JH</text>
+<path d="M88 112 q10 -5 20 -1" stroke="#2b1d14" stroke-width="3.5" stroke-linecap="round" fill="none"></path>
+<path d="M132 111 q10 -4 20 1" stroke="#2b1d14" stroke-width="3.5" stroke-linecap="round" fill="none"></path>
+<path d="M90 126 q9 -8 18 0" stroke="#2b1d14" stroke-width="4" stroke-linecap="round" fill="none"></path>
+<path d="M132 126 q9 -8 18 0" stroke="#2b1d14" stroke-width="4" stroke-linecap="round" fill="none"></path>
+<ellipse cx="86" cy="142" rx="10" ry="6" fill="#f08f8a" opacity="0.45"></ellipse>
+<ellipse cx="154" cy="142" rx="10" ry="6" fill="#f08f8a" opacity="0.45"></ellipse>
+<path d="M114 138 q6 5 12 0" stroke="#c98e6a" stroke-width="3" stroke-linecap="round" fill="none"></path>
+<path d="M102 150 C110 164 130 164 138 150 Z" fill="#ffffff" stroke="#6b3a2a" stroke-width="2.5" stroke-linejoin="round"></path>
+</svg></div>
+<div class="c-ribbon"><small>JAEHOON JEONG · 삼성전자 MX사업부</small><b>LLM Agent를 만드는 개발자</b></div>
+<div class="c-moves">
+<div class="mv"><span class="mv-t"><b>삼성전자 MX사업부</b><small>책임 개발자 · 2014년 입사</small></span></div>
+<div class="mv"><span class="mv-t"><b>개인 프로젝트</b><small>Claude Code와 Codex로 만든 도구를 직접 운영</small></span></div>
+</div>
+<div class="p-skills"><span class="badge" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge" style="--b:#348359"><span class="glyph" aria-hidden="true">V</span>Vue</span><span class="badge" style="--b:#a8511c"><span class="glyph" aria-hidden="true">J</span>Java</span><span class="badge" style="--b:#4c812d"><span class="glyph" aria-hidden="true">SB</span>Spring Boot</span><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#3c8346"><span class="glyph" aria-hidden="true">Mg</span>MongoDB</span><span class="badge" style="--b:#0a6fc2"><span class="glyph" aria-hidden="true">Az</span>Azure</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span><span class="badge" style="--b:#2b2d42"><span class="glyph" aria-hidden="true">&gt;_</span>Codex</span><span class="badge" style="--b:#c62a2a"><span class="glyph" aria-hidden="true">AI</span>LLM Agent</span></div>
+<div class="c-foot"><span>github.com/himangga01</span></div>
+</div></div></div><span class="foil" aria-hidden="true"></span><span class="glare" aria-hidden="true"></span></div>
+</div>
+</div>
+</section>
+<section class="sec" id="featured" aria-labelledby="featured-title">
+<header class="sec-head"><p class="eyebrow">FEATURED</p><h2 id="featured-title">대표 프로젝트</h2></header>
+<div class="cases"><article class="case" id="case-procure" aria-labelledby="case-t-0">
+<div class="case-cards"><button type="button" class="tcard g-impact " data-id="procure" data-pack="admin" data-grade="impact" aria-label="조달 공고 검토 도구, 성과 확인 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">Py</span><span class="c-titles"><span class="c-cat">행정 업무 자동화</span><span class="c-title">조달 공고 검토 도구</span></span><span class="c-stat"><b>20분</b><small>공고 1건 검토</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#4a63d9"><span class="glyph" aria-hidden="true">G</span>Gemini</span><span class="badge" style="--b:#8e44ad"><span class="glyph" aria-hidden="true">Rg</span>RAG</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-owl"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>기존 1~2시간 → 약 20분</small><b>공고 검토 시간 단축</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>Gemini 판단 + 규칙 검사</b><small>근거가 없으면 AI 판단과 관계없이 &#x27;검토 필요&#x27;로 분류</small></span></span><span class="mv"><span class="mv-t"><b>OCR · RAG</b><small>스캔 서류는 PaddleOCR로 읽고 참고 문서는 RAG로 검색</small></span></span><span class="mv"><span class="mv-t"><b>판정 로직 테스트</b><small>병합 규칙과 추출 결과를 테스트로 확인</small></span><em>216</em></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Spec Kit · Flask</span><span class="c-grade">IMPACT</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></div>
+<div class="case-body">
+<p class="case-no">01</p>
+<h3 id="case-t-0">조달 공고 검토 도구</h3>
+<dl class="case-dl">
+<div><dt>문제</dt><dd>공고문과 첨부 PDF를 읽고 고객사 증빙서류와 하나씩 대조하는 데 공고 한 건당 1~2시간이 걸렸습니다.</dd></div>
+<div><dt>접근</dt><dd>공공데이터 API로 공고를 모으고 PaddleOCR로 스캔 서류를 읽고 참고 문서를 RAG로 검색해 Gemini가 요건을 정리하게 했습니다. AI가 충족이라고 답해도 문서 근거가 없으면 검토 필요로 내리고 신뢰도가 낮으면 규칙 판정을 따르도록 병합 규칙을 정했습니다.</dd></div>
+<div><dt>결과</dt><dd>실무에 쓰면서 공고 한 건 검토가 약 20분으로 줄었고 판정 로직에는 테스트 216개를 두었습니다.</dd></div>
+<div><dt>맡은 일</dt><dd><ul><li>요구사항 정리와 판정 규칙 설계</li><li>테스트 기준 작성</li><li>실무 피드백 반영</li></ul></dd></div>
+</dl>
+<div class="case-tech"><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#4a63d9"><span class="glyph" aria-hidden="true">G</span>Gemini</span><span class="badge" style="--b:#8e44ad"><span class="glyph" aria-hidden="true">Rg</span>RAG</span></div>
+<div class="case-links"><a class="ext" href="https://github.com/himangga01/wisdom_procurement" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
+</div>
+</article><article class="case" id="case-office" aria-labelledby="case-t-1">
+<div class="case-cards two"><button type="button" class="tcard g-live " data-id="office" data-pack="web" data-grade="live" aria-label="지혜행정사사무소 홈페이지, 운영 중 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">N</span><span class="c-titles"><span class="c-cat">사무소 웹 운영</span><span class="c-title">지혜행정사사무소 홈페이지</span></span><span class="c-stat"><b>56</b><small>공개 페이지</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-whale"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>운영 중 · jihyeadminoffice.com</small><b>4개 국어 사무소 홈페이지</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>외부 패키지 없는 Node 서버</b><small>Node 내장 모듈만으로 Mac mini 한 대에서 운영</small></span></span><span class="mv"><span class="mv-t"><b>상담 접수 알림</b><small>메일 접수가 성공하면 텔레그램으로 한 번 더 알림</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Claude Code · Node.js</span><span class="c-grade">LIVE</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button><button type="button" class="tcard g-live " data-id="school" data-pack="web" data-grade="live" aria-label="학교폭력 전문 사이트, 운영 중 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">N</span><span class="c-titles"><span class="c-cat">사무소 웹 운영</span><span class="c-title">학교폭력 전문 사이트</span></span><span class="c-stat"><b>2026.08</b><small>공개</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge" style="--b:#b16018"><span class="glyph" aria-hidden="true">CF</span>Cloudflare</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bear"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>운영 중 · jihyeadminschool.co.kr</small><b>학교폭력 행정 안내</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>장애 복구</b><small>재부팅 뒤 끊긴 외부 접속의 원인(토큰 파일 누락)을 찾아 복구 스크립트 작성</small></span></span><span class="mv"><span class="mv-t"><b>검색 등록</b><small>네이버·구글 등록, 네이버·Bing에 IndexNow로 변경 알림</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Claude Code · Node.js</span><span class="c-grade">LIVE</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></div>
+<div class="case-body">
+<p class="case-no">02</p>
+<h3 id="case-t-1">사무소 웹사이트 2곳</h3>
+<dl class="case-dl">
+<div><dt>문제</dt><dd>사무소를 알릴 곳과 상담 신청을 놓치지 않고 받을 방법이 필요했습니다.</dd></div>
+<div><dt>접근</dt><dd>두 사이트 모두 외부 패키지 없이 Node 내장 모듈로 만들어 Mac mini 한 대에서 Cloudflare 터널로 공개했습니다. 상담 신청은 메일과 텔레그램으로 바로 전달되며 방문 통계는 쿠키 없이 익명으로 셉니다.</dd></div>
+<div><dt>결과</dt><dd>4개 국어 56페이지의 사무소 홈페이지와 2026년 8월에 공개한 학교폭력 전문 사이트가 운영 중입니다. 재부팅 뒤 외부 접속이 끊긴 장애는 원인을 찾아 복구했고 같은 상황을 바로 되살리는 스크립트를 남겼습니다.</dd></div>
+<div><dt>맡은 일</dt><dd><ul><li>구조 설계와 개인정보 처리 방식 결정</li><li>서버·도메인 운영</li><li>장애 대응</li></ul></dd></div>
+</dl>
+<div class="case-tech"><span class="badge" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span><span class="badge" style="--b:#b16018"><span class="glyph" aria-hidden="true">CF</span>Cloudflare</span></div>
+<div class="case-links"><a class="ext" href="https://jihyeadminoffice.com" target="_blank" rel="noopener">사이트 <span aria-hidden="true">↗</span></a><a class="ext" href="https://jihyeadminschool.co.kr" target="_blank" rel="noopener">사이트 <span aria-hidden="true">↗</span></a><span class="private">비공개 저장소</span></div>
+</div>
+</article><article class="case" id="case-humanize" aria-labelledby="case-t-2">
+<div class="case-cards"><button type="button" class="tcard g-live " data-id="humanize" data-pack="admin" data-grade="live" aria-label="한국어 문장 다듬기 도구, 운영 중 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">TS</span><span class="c-titles"><span class="c-cat">행정 업무 자동화</span><span class="c-title">한국어 문장 다듬기 도구</span></span><span class="c-stat"><b>106초</b><small>짧은 문서 p50</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-cat"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>Windows 앱 · Claude/Codex 스킬</small><b>번역투 문장 다듬기</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>Python 검증 게이트</b><small>숫자·인용·고유명사가 바뀐 문장은 원문으로 복원</small></span></span><span class="mv"><span class="mv-t"><b>자동 라우팅 측정</b><small>262초→106초, 목표(40% 이하)에 0.5%p 못 미쳐 기본값 미적용</small></span><em>40.5%</em></span></span>
+<span class="c-foot"><span class="c-tools">Claude Code · Codex CLI</span><span class="c-grade">LIVE</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></div>
+<div class="case-body">
+<p class="case-no">03</p>
+<h3 id="case-t-2">한국어 문장 다듬기 도구</h3>
+<dl class="case-dl">
+<div><dt>문제</dt><dd>AI로 쓴 한국어 글에는 번역투와 기계적인 나열이 남아 그대로 쓰기 어려웠습니다.</dd></div>
+<div><dt>접근</dt><dd>그래서 Claude Code나 Codex를 엔진으로 쓰는 윤문 도구를 Windows 앱과 스킬로 만들었고 윤문 뒤 검증 단계에서 숫자·인용·고유명사가 바뀐 문장은 원문으로 되돌리게 했습니다.</dd></div>
+<div><dt>결과</dt><dd>짧은 문서 처리 시간을 262초에서 106초로 줄였지만 목표로 정한 기존 대비 40% 이하에 0.5%p 못 미쳐 기본값으로 쓰지 않았습니다. 이 포트폴리오의 문구도 이 도구로 검토했습니다.</dd></div>
+<div><dt>맡은 일</dt><dd><ul><li>윤문 규칙과 검증 절차 설계</li><li>성능 측정 기준 설정</li><li>배포 패키징</li></ul></dd></div>
+</dl>
+<div class="case-tech"><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></div>
+<div class="case-links"><span class="private">비공개 저장소</span></div>
+</div>
+</article></div>
+</section>
+<section class="sec" id="career" aria-labelledby="career-title">
+<header class="sec-head"><p class="eyebrow">CAREER · EDUCATION</p><h2 id="career-title">경력과 학력</h2>
+<p class="sec-lead">2014년 입사 뒤 앱, 클라우드 백엔드, 프론트엔드를 거쳐 지금은 LLM Agent를 개발합니다.</p></header>
+<div class="career-grid">
+<div>
+<dl class="career-meta"><div><dt>회사</dt><dd>삼성전자 MX사업부</dd></div><div><dt>기간</dt><dd>2014.03 ~ 재직 중</dd></div><div><dt>직위</dt><dd>CL3 (책임)</dd></div></dl>
+<ol class="timeline"><li class="role now">
+<div class="role-year"><span>&#x27;25 ~ 현재</span><span class="now-chip">재직 중 업무</span></div>
+<div class="role-body"><h3>사내 개발 지원 LLM Agent</h3><p>요구사항과 UX팀의 Figma 산출물을 해석해 FE 코드를 생성하고 검증하는 사내 개발 지원 LLM Agent를 설계하고 구현합니다. 요구사항 정의, 아키텍처·프롬프트 설계, 테스트 자동화, 배포·운영까지 맡아 과제를 이끌고 있습니다.</p><div class="tags"><span class="badge sm" style="--b:#c62a2a"><span class="glyph" aria-hidden="true">AI</span>LLM Agent</span><span class="tag">프롬프트 설계</span><span class="tag">Figma 해석</span><span class="tag">테스트 자동화</span></div></div>
+</li><li class="role now">
+<div class="role-year"><span>&#x27;20 ~ 현재</span><span class="now-chip">재직 중 업무</span></div>
+<div class="role-body"><h3>Android OS 업데이트 · 금융자산보호 서비스 FE</h3><p>삼성 디바이스 Android OS 업데이트 서비스와 원격관리 금융자산보호 서비스의 프론트엔드를 개발합니다. React, JavaScript, TypeScript로 화면과 주요 기능을 만들고 운영·장애 대응과 성능·품질 개선을 맡고 있습니다. 필리핀, 캐나다, 미국 연구소와 개발 이슈를 조율합니다.</p><div class="tags"><span class="badge sm" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge sm" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge sm" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="tag">글로벌 협업</span></div></div>
+</li><li class="role">
+<div class="role-year"><span>&#x27;19 ~ &#x27;20</span></div>
+<div class="role-body"><h3>C-Lab AIOS MIXY</h3><p>IoT 요리 솔루션을 기획하고 구현했습니다. 프로젝트 제안과 팀 구성 단계부터 참여해 사용자 데이터 기반 AI 맞춤 요리 추천 알고리즘을 설계·개발했습니다. API·DB 설계, Azure 서버 인프라 구축·운영, 모션 인식 레시피 단계화도 직접 했습니다.</p><div class="tags"><span class="tag">AI 추천</span><span class="badge sm" style="--b:#0a6fc2"><span class="glyph" aria-hidden="true">Az</span>Azure</span><span class="badge sm" style="--b:#5b4fc4"><span class="glyph" aria-hidden="true">IoT</span>IoT</span><span class="tag">API·DB 설계</span></div></div>
+</li><li class="role">
+<div class="role-year"><span>&#x27;16 ~ &#x27;19</span></div>
+<div class="role-body"><h3>Knox Configure 백엔드</h3><p>Knox Configure 클라우드 백엔드 API를 개발하고 MySQL을 MongoDB로 전환했으며 관리 서버 2종도 새로 만들었습니다.</p><div class="tags"><span class="tag">클라우드 API</span><span class="badge sm" style="--b:#00758f"><span class="glyph" aria-hidden="true">My</span>MySQL</span><span class="badge sm" style="--b:#3c8346"><span class="glyph" aria-hidden="true">Mg</span>MongoDB</span></div></div>
+</li><li class="role">
+<div class="role-year"><span>&#x27;15 ~ &#x27;16</span></div>
+<div class="role-body"><h3>Samsung School</h3><p>삼성스쿨 교육용 태블릿 솔루션 앱을 개발했습니다.</p><div class="tags"><span class="tag">태블릿 앱</span><span class="tag">교육</span></div></div>
+</li><li class="role">
+<div class="role-year"><span>&#x27;14 ~ &#x27;15</span></div>
+<div class="role-body"><h3>인사팀 TF</h3><p>1년간 임직원 대상 갤럭시 활용 교육과 1박 2일 해커톤을 기획하고 운영했습니다.</p><div class="tags"><span class="tag">교육 기획</span><span class="tag">해커톤 운영</span></div></div>
+</li></ol>
+</div>
+<div class="career-side">
+<aside class="edu" aria-labelledby="edu-title">
+<p class="eyebrow small">학력 · 2006.03 ~ 2014.02</p>
+<h3 id="edu-title">아주대학교 전자공학과 졸업</h3>
+<dl>
+<div><dt>학위</dt><dd>학사</dd></div>
+<div><dt>계열</dt><dd>공학계열 · 전기/전자</dd></div>
+<div><dt>복수 전공</dt><dd>컴퓨터공학과</dd></div>
+</dl>
+</aside>
+<aside class="membership" aria-labelledby="mem-title">
+<p class="eyebrow small">입사 전 · 2011.12 ~ 2013.11</p>
+<h3 id="mem-title">삼성전자 SW멤버십 수원</h3>
+<ol><li><span class="num" aria-hidden="true">01</span>폭탄 해체 로봇팔 설계·구현</li><li><span class="num" aria-hidden="true">02</span>초음파 센서를 활용한 전자악기</li><li><span class="num" aria-hidden="true">03</span>미디어 아트 구현용 프레임워크</li><li><span class="num" aria-hidden="true">04</span>PPT처럼 쉽게 만드는 홈페이지 제작 서비스</li><li><span class="num" aria-hidden="true">05</span>삼성 과제 · 타이젠 기반 삼성 TV용 리듬게임</li><li><span class="num" aria-hidden="true">06</span>삼성 과제 · 뉴스 사이트를 크롤링한 뉴스 대시보드</li></ol>
+</aside>
+<aside class="linked" aria-labelledby="linked-title">
+<p class="eyebrow small linked-eye">LINKED</p>
+<h3 id="linked-title">회사에서도, 집에서도 Figma를 코드로</h3>
+<p>회사에서는 UX팀 Figma 산출물을 읽어 FE 코드를 만드는 Agent를 설계하고 있습니다. 개인 프로젝트로는 Figma 디자인을 코드로 옮기는 MCP 파이프라인을 따로 만들었습니다.</p>
+<button type="button" class="ext" data-open="figma">Figma → 코드 파이프라인 보기</button>
+</aside>
+</div>
+</div>
+</section>
+<section class="sec" id="how" aria-labelledby="how-title">
+<header class="sec-head"><p class="eyebrow">HOW I WORK</p><h2 id="how-title">AI와 일하는 방식</h2>
+<p class="sec-lead">개인 프로젝트는 Claude Code와 Codex를 코딩 에이전트로 두고 만들었습니다. 코드를 빨리 얻는 것보다 결과를 믿을 수 있는지 확인하는 데 시간을 더 썼습니다.</p></header>
+<ol class="steps">
+<li><span class="step-no">1</span><h3>설계를 먼저 확정</h3><p>GitHub Spec Kit으로 요구사항, 설계, 작업 목록을 문서로 정한 뒤 구현을 맡겼습니다.</p></li>
+<li><span class="step-no">2</span><h3>테스트를 먼저</h3><p>기능마다 실패하는 테스트를 먼저 쓰게 했고 통과 기록은 작업 로그에 남겼습니다.</p></li>
+<li><span class="step-no">3</span><h3>다른 AI가 교차 리뷰</h3><p>한 에이전트가 만든 결과는 다른 에이전트에게 독립 리뷰를 맡기고, 지적 사항을 반영한 뒤 제가 최종 확인했습니다.</p></li>
+</ol>
+<div class="split">
+<div class="split-col"><h3>제가 맡은 일</h3><ul><li>요구사항 정리와 우선순위 결정</li><li>판정 규칙과 검증 기준 설계</li><li>리뷰 지적의 수용 여부 판단</li><li>배포·운영과 장애 대응</li></ul></div>
+<div class="split-col"><h3>AI에게 맡긴 일</h3><ul><li>코드 초안과 테스트 코드 작성</li><li>1차 코드 리뷰</li><li>문서 초안</li></ul></div>
+<div class="split-col guard"><h3>근거 없는 판단은 사람에게</h3><ul><li>조달 공고: 근거가 없으면 검토 필요로 분류</li><li>문장 다듬기: 사실이 바뀐 문장은 원문 복원</li><li>경매 분석: 두 판단이 다르면 전문가 검토로 보류</li></ul></div>
+</div>
+</section>
+<section class="sec" id="cards" aria-labelledby="cards-title">
+<header class="sec-head"><p class="eyebrow">CARD PACKS</p><h2 id="cards-title">카드로 둘러보기</h2>
+<p class="sec-lead">프로젝트를 여섯 분야로 나눠 카드로 만들었습니다. 분야를 고르고 포장 윗부분을 옆으로 밀면 카드가 한 장씩 열립니다. 연출 없이 보시려면 <a href="#all">전체 프로젝트</a> 목록을 이용해 주세요.</p></header>
+<ul class="packs"><li><button type="button" class="pack" data-pack="admin" style="--pack:linear-gradient(160deg,#e2475b 0%,#a8182f 48%,#5a0916 100%)">
+<span class="pack-body"><span class="crimp" aria-hidden="true"></span>
+<span class="pack-brand" aria-hidden="true">DEV PACK</span>
+<span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-owl"></use></svg></span>
+<span class="pack-label"><span class="pack-name">행정 업무 자동화</span><span class="pack-desc">공고 검토 · 문장 다듬기</span></span>
+<span class="crimp" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span></span>
+<span class="pack-meta"><span>프로젝트 2개</span><span class="gchip g-impact">IMPACT</span></span>
+<span class="opened-mark" hidden>열어 봄</span>
+</button></li><li><button type="button" class="pack" data-pack="web" style="--pack:linear-gradient(160deg,#d9822b 0%,#a44c08 48%,#5a2603 100%)">
+<span class="pack-body"><span class="crimp" aria-hidden="true"></span>
+<span class="pack-brand" aria-hidden="true">DEV PACK</span>
+<span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-whale"></use></svg></span>
+<span class="pack-label"><span class="pack-name">사무소 웹 운영</span><span class="pack-desc">운영 중인 사이트 2곳</span></span>
+<span class="crimp" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span></span>
+<span class="pack-meta"><span>프로젝트 2개</span><span class="gchip g-live">LIVE</span></span>
+<span class="opened-mark" hidden>열어 봄</span>
+</button></li><li><button type="button" class="pack" data-pack="content" style="--pack:linear-gradient(160deg,#1fa58c 0%,#0b6f60 48%,#053a33 100%)">
+<span class="pack-body"><span class="crimp" aria-hidden="true"></span>
+<span class="pack-brand" aria-hidden="true">DEV PACK</span>
+<span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-penguin"></use></svg></span>
+<span class="pack-label"><span class="pack-name">콘텐츠 자동화</span><span class="pack-desc">기사 · 숏폼 영상</span></span>
+<span class="crimp" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span></span>
+<span class="pack-meta"><span>프로젝트 2개</span><span class="gchip g-tested">TESTED</span></span>
+<span class="opened-mark" hidden>열어 봄</span>
+</button></li><li><button type="button" class="pack" data-pack="tools" style="--pack:linear-gradient(160deg,#8466e0 0%,#5a33c4 48%,#2a0f63 100%)">
+<span class="pack-body"><span class="crimp" aria-hidden="true"></span>
+<span class="pack-brand" aria-hidden="true">DEV PACK</span>
+<span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-chameleon"></use></svg></span>
+<span class="pack-label"><span class="pack-name">AI 개발 도구</span><span class="pack-desc">MCP · 디자인 편집기</span></span>
+<span class="crimp" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span></span>
+<span class="pack-meta"><span>프로젝트 2개</span><span class="gchip g-tested">TESTED</span></span>
+<span class="opened-mark" hidden>열어 봄</span>
+</button></li><li><button type="button" class="pack" data-pack="personal" style="--pack:linear-gradient(160deg,#3f7fd9 0%,#1f4fb8 48%,#0d1f5a 100%)">
+<span class="pack-body"><span class="crimp" aria-hidden="true"></span>
+<span class="pack-brand" aria-hidden="true">DEV PACK</span>
+<span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-turtle"></use></svg></span>
+<span class="pack-label"><span class="pack-name">개인용 도구</span><span class="pack-desc">경매 · 매물 · 미디어</span></span>
+<span class="crimp" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span></span>
+<span class="pack-meta"><span>프로젝트 3개</span><span class="gchip g-tested">TESTED</span></span>
+<span class="opened-mark" hidden>열어 봄</span>
+</button></li><li><button type="button" class="pack" data-pack="next" style="--pack:linear-gradient(160deg,#6b7a93 0%,#3d4a5f 48%,#141b28 100%)">
+<span class="pack-body"><span class="crimp" aria-hidden="true"></span>
+<span class="pack-brand" aria-hidden="true">DEV PACK</span>
+<span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-firefly"></use></svg></span>
+<span class="pack-label"><span class="pack-name">다음 계획</span><span class="pack-desc">설계를 마친 프로젝트</span></span>
+<span class="crimp" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span></span>
+<span class="pack-meta"><span>프로젝트 3개</span><span class="gchip g-plan">PLAN</span></span>
+<span class="opened-mark" hidden>열어 봄</span>
+</button></li></ul>
+<div class="legend"><p class="legend-title">등급 기준 <small>등급은 기술 난이도가 아니라 결과를 기준으로 나눴습니다.</small></p><ul><li><span class="gchip g-impact">IMPACT</span><span><b>성과 확인</b><small>실제 업무에 쓰이고 전후 차이를 확인</small></span><span class="gcount">1개</span></li><li><span class="gchip g-live">LIVE</span><span><b>운영 중</b><small>공개 운영 중이거나 배포 파일로 사용 가능</small></span><span class="gcount">3개</span></li><li><span class="gchip g-tested">TESTED</span><span><b>동작 검증</b><small>테스트 기록으로 주요 기능의 동작을 확인</small></span><span class="gcount">7개</span></li><li><span class="gchip g-plan">PLAN</span><span><b>설계 완료</b><small>요구사항·설계 문서를 마치고 구현 준비</small></span><span class="gcount">3개</span></li></ul></div>
+</section>
+<section class="sec" id="all" aria-labelledby="all-title">
+<header class="sec-head"><p class="eyebrow">ALL PROJECTS</p><h2 id="all-title">전체 프로젝트</h2>
+<p class="sec-lead">14개 프로젝트를 모두 보여 드립니다. 카드를 누르면 자세한 내용을 볼 수 있습니다.</p></header>
+<div class="filters" role="group" aria-label="프로젝트 필터"><button type="button" class="chip" data-filter-all aria-pressed="true">전체</button><button type="button" class="chip" data-filter-pack="admin" aria-pressed="false">행정 업무 자동화</button><button type="button" class="chip" data-filter-pack="web" aria-pressed="false">사무소 웹 운영</button><button type="button" class="chip" data-filter-pack="content" aria-pressed="false">콘텐츠 자동화</button><button type="button" class="chip" data-filter-pack="tools" aria-pressed="false">AI 개발 도구</button><button type="button" class="chip" data-filter-pack="personal" aria-pressed="false">개인용 도구</button><button type="button" class="chip" data-filter-pack="next" aria-pressed="false">다음 계획</button><span class="sep" aria-hidden="true"></span><button type="button" class="chip" data-filter-grade="impact" aria-pressed="false">IMPACT · 성과 확인</button><button type="button" class="chip" data-filter-grade="live" aria-pressed="false">LIVE · 운영 중</button><button type="button" class="chip" data-filter-grade="tested" aria-pressed="false">TESTED · 동작 검증</button><button type="button" class="chip" data-filter-grade="plan" aria-pressed="false">PLAN · 설계 완료</button></div>
+<p class="filter-count" aria-live="polite"><span id="count">14</span>개 표시</p>
+<ul class="grid"><li><button type="button" class="tcard g-impact " data-id="procure" data-pack="admin" data-grade="impact" aria-label="조달 공고 검토 도구, 성과 확인 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">Py</span><span class="c-titles"><span class="c-cat">행정 업무 자동화</span><span class="c-title">조달 공고 검토 도구</span></span><span class="c-stat"><b>20분</b><small>공고 1건 검토</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#4a63d9"><span class="glyph" aria-hidden="true">G</span>Gemini</span><span class="badge" style="--b:#8e44ad"><span class="glyph" aria-hidden="true">Rg</span>RAG</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-owl"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>기존 1~2시간 → 약 20분</small><b>공고 검토 시간 단축</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>Gemini 판단 + 규칙 검사</b><small>근거가 없으면 AI 판단과 관계없이 &#x27;검토 필요&#x27;로 분류</small></span></span><span class="mv"><span class="mv-t"><b>OCR · RAG</b><small>스캔 서류는 PaddleOCR로 읽고 참고 문서는 RAG로 검색</small></span></span><span class="mv"><span class="mv-t"><b>판정 로직 테스트</b><small>병합 규칙과 추출 결과를 테스트로 확인</small></span><em>216</em></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Spec Kit · Flask</span><span class="c-grade">IMPACT</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-live " data-id="humanize" data-pack="admin" data-grade="live" aria-label="한국어 문장 다듬기 도구, 운영 중 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">TS</span><span class="c-titles"><span class="c-cat">행정 업무 자동화</span><span class="c-title">한국어 문장 다듬기 도구</span></span><span class="c-stat"><b>106초</b><small>짧은 문서 p50</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-cat"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>Windows 앱 · Claude/Codex 스킬</small><b>번역투 문장 다듬기</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>Python 검증 게이트</b><small>숫자·인용·고유명사가 바뀐 문장은 원문으로 복원</small></span></span><span class="mv"><span class="mv-t"><b>자동 라우팅 측정</b><small>262초→106초, 목표(40% 이하)에 0.5%p 못 미쳐 기본값 미적용</small></span><em>40.5%</em></span></span>
+<span class="c-foot"><span class="c-tools">Claude Code · Codex CLI</span><span class="c-grade">LIVE</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-live " data-id="office" data-pack="web" data-grade="live" aria-label="지혜행정사사무소 홈페이지, 운영 중 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">N</span><span class="c-titles"><span class="c-cat">사무소 웹 운영</span><span class="c-title">지혜행정사사무소 홈페이지</span></span><span class="c-stat"><b>56</b><small>공개 페이지</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-whale"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>운영 중 · jihyeadminoffice.com</small><b>4개 국어 사무소 홈페이지</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>외부 패키지 없는 Node 서버</b><small>Node 내장 모듈만으로 Mac mini 한 대에서 운영</small></span></span><span class="mv"><span class="mv-t"><b>상담 접수 알림</b><small>메일 접수가 성공하면 텔레그램으로 한 번 더 알림</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Claude Code · Node.js</span><span class="c-grade">LIVE</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-live " data-id="school" data-pack="web" data-grade="live" aria-label="학교폭력 전문 사이트, 운영 중 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">N</span><span class="c-titles"><span class="c-cat">사무소 웹 운영</span><span class="c-title">학교폭력 전문 사이트</span></span><span class="c-stat"><b>2026.08</b><small>공개</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge" style="--b:#b16018"><span class="glyph" aria-hidden="true">CF</span>Cloudflare</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bear"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>운영 중 · jihyeadminschool.co.kr</small><b>학교폭력 행정 안내</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>장애 복구</b><small>재부팅 뒤 끊긴 외부 접속의 원인(토큰 파일 누락)을 찾아 복구 스크립트 작성</small></span></span><span class="mv"><span class="mv-t"><b>검색 등록</b><small>네이버·구글 등록, 네이버·Bing에 IndexNow로 변경 알림</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Claude Code · Node.js</span><span class="c-grade">LIVE</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="writer" data-pack="content" data-grade="tested" aria-label="청약 기사 자동화, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">Py</span><span class="c-titles"><span class="c-cat">콘텐츠 자동화</span><span class="c-title">청약 기사 자동화</span></span><span class="c-stat"><b>19/19</b><small>기사 검증</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#0c6b48"><span class="glyph" aria-hidden="true">Dj</span>Django</span><span class="badge" style="--b:#577f27"><span class="glyph" aria-hidden="true">Ce</span>Celery</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-penguin"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>공고 72건 → 주거 43건 → 기사 19건</small><b>출처가 달린 기사 작성</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>Python 테스트</b><small>테스트 함수로 수집부터 발행 전 검증까지 확인</small></span><em>1,046</em></span><span class="mv"><span class="mv-t"><b>발행 전 확인</b><small>출처 연결과 정정·철회 기능</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Spec Kit · Django</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="ssul" data-pack="content" data-grade="tested" aria-label="숏폼 영상 제작 도구, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">R</span><span class="c-titles"><span class="c-cat">콘텐츠 자동화</span><span class="c-title">숏폼 영상 제작 도구</span></span><span class="c-stat"><b>9:16</b><small>MP4 출력</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge" style="--b:#1f7a3a"><span class="glyph" aria-hidden="true">Ff</span>FFmpeg</span><span class="badge" style="--b:#4a63d9"><span class="glyph" aria-hidden="true">G</span>Gemini</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-octopus"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>대본 → 장면 → 음성 → 영상</small><b>SSUL MAKER</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>TTS 공급자 전환</b><small>OpenAI TTS에서 Gemini TTS로 바꾸고 캐시 키를 분리</small></span></span><span class="mv"><span class="mv-t"><b>비동기 렌더링</b><small>FFmpeg로 9:16 MP4 내보내기</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · React · Express</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="figma" data-pack="tools" data-grade="tested" aria-label="Figma → 코드 파이프라인, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">TS</span><span class="c-titles"><span class="c-cat">AI 개발 도구</span><span class="c-title">Figma → 코드 파이프라인</span></span><span class="c-stat"><b>3,325</b><small>테스트 통과</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">M</span>MCP</span><span class="badge" style="--b:#2b844b"><span class="glyph" aria-hidden="true">Pw</span>Playwright</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-chameleon"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>개발 중 · MCP 서버</small><b>디자인을 코드로</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>전체 테스트</b><small>테스트 파일 300개, 실패 0 (2026-09-06 기준)</small></span><em>3,325</em></span><span class="mv"><span class="mv-t"><b>대용량 스냅샷</b><small>노드 1만 개·엣지 2만 개 처리</small></span><em>10K</em></span></span>
+<span class="c-foot"><span class="c-tools">TypeScript · MCP</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="localframe" data-pack="tools" data-grade="tested" aria-label="로컬 UI 디자인 편집기, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">R</span><span class="c-titles"><span class="c-cat">AI 개발 도구</span><span class="c-title">로컬 UI 디자인 편집기</span></span><span class="c-stat"><b>376</b><small>테스트 통과</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge" style="--b:#56607a"><span class="glyph" aria-hidden="true">Ex</span>Express</span><span class="badge" style="--b:#b95835"><span class="glyph" aria-hidden="true">M</span>MCP</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-crab"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>LocalFrame · 로컬 편집기</small><b>2일 만의 MVP</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>테스트 먼저</b><small>작업 로그에 남긴 최종 테스트 통과 수</small></span><em>376</em></span><span class="mv"><span class="mv-t"><b>AI 편집 인터페이스</b><small>MCP로 에이전트가 디자인을 읽고 수정</small></span></span></span>
+<span class="c-foot"><span class="c-tools">React · Express · MCP</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="auction" data-pack="personal" data-grade="tested" aria-label="법원 경매 권리분석, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">Py</span><span class="c-titles"><span class="c-cat">개인용 도구</span><span class="c-title">법원 경매 권리분석</span></span><span class="c-stat"><b>231</b><small>테스트 통과</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge" style="--b:#00796b"><span class="glyph" aria-hidden="true">F</span>FastAPI</span><span class="badge" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-turtle"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>개발 중 · 작업 114개 중 39개 완료</small><b>불일치는 전문가 검토로</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>LLM·규칙 교차 판정 설계</b><small>두 판단이 다르면 자동 공개하지 않고 전문가 검토로 보류</small></span></span><span class="mv"><span class="mv-t"><b>원문 보존</b><small>원문을 SHA-256 해시로 저장해 출처 추적</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Spec Kit · FastAPI</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="apt" data-pack="personal" data-grade="tested" aria-label="아파트 매물 추적, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">F</span><span class="c-titles"><span class="c-cat">개인용 도구</span><span class="c-title">아파트 매물 추적</span></span><span class="c-stat"><b>5종</b><small>변동 유형</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#00796b"><span class="glyph" aria-hidden="true">F</span>FastAPI</span><span class="badge" style="--b:#336791"><span class="glyph" aria-hidden="true">PG</span>PostgreSQL</span><span class="badge" style="--b:#2b844b"><span class="glyph" aria-hidden="true">Pw</span>Playwright</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-squirrel"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>신규 · 변경 · 숨김 · 삭제 · 재등록</small><b>매물 변동 추적</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>부분 저장 거부</b><small>화면 건수와 수집 건수가 다르면 저장하지 않음</small></span></span><span class="mv"><span class="mv-t"><b>CI 점검</b><small>마이그레이션과 화면 빌드를 CI에서 확인</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · FastAPI · React</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-tested " data-id="media" data-pack="personal" data-grade="tested" aria-label="미디어 변환기, 동작 검증 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">K</span><span class="c-titles"><span class="c-cat">개인용 도구</span><span class="c-title">미디어 변환기</span></span><span class="c-stat"><b>120/126</b><small>작업 완료</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#6a44d8"><span class="glyph" aria-hidden="true">K</span>Kotlin</span><span class="badge" style="--b:#00796b"><span class="glyph" aria-hidden="true">F</span>FastAPI</span><span class="badge" style="--b:#1f7a3a"><span class="glyph" aria-hidden="true">Ff</span>FFmpeg</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bat"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>웹 + Android 앱</small><b>권리 있는 미디어 변환</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>독립 실행 앱</b><small>서버 없이 동작하는 Android APK</small></span></span><span class="mv"><span class="mv-t"><b>작업 관리</b><small>취소·재시도·재개와 작업 이력</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Spec Kit · Kotlin</span><span class="c-grade">TESTED</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-plan " data-id="observer" data-pack="next" data-grade="plan" aria-label="무인매장 관제, 설계 완료 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">Y</span><span class="c-titles"><span class="c-cat">다음 계획</span><span class="c-title">무인매장 관제</span></span><span class="c-stat"><b>1,603</b><small>설계 문서 줄</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#c93a1b"><span class="glyph" aria-hidden="true">Y</span>YOLO</span><span class="badge" style="--b:#0d8266"><span class="glyph" aria-hidden="true">AI</span>GPT</span><span class="badge" style="--b:#2b2f45"><span class="glyph" aria-hidden="true">Nx</span>Next.js</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-firefly"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>YOLO 1차 → GPT 재확인</small><b>이상 행동 감지 설계</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>비용 설계</b><small>영상 전체 대신 후보 장면만 AI로 전송</small></span></span><span class="mv"><span class="mv-t"><b>진행 상태</b><small>설계 문서 완료, 구현 전</small></span></span></span>
+<span class="c-foot"><span class="c-tools">GPT · YOLO (계획)</span><span class="c-grade">PLAN</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-plan " data-id="policy" data-pack="next" data-grade="plan" aria-label="부동산 정책 대시보드, 설계 완료 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">GIS</span><span class="c-titles"><span class="c-cat">다음 계획</span><span class="c-title">부동산 정책 대시보드</span></span><span class="c-stat"><b>105</b><small>정책 이벤트</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#2f6b9a"><span class="glyph" aria-hidden="true">GIS</span>PostGIS</span><span class="badge" style="--b:#5b4bb7"><span class="glyph" aria-hidden="true">V</span>pgvector</span><span class="badge" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-giraffe"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>모르면 판정 보류</small><b>정책·세금 계산 설계</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>안전한 응답</b><small>확인이 어려우면 공식 확인이 필요하다고 안내</small></span></span><span class="mv"><span class="mv-t"><b>진행 상태</b><small>설정과 CI 골격 단계</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Spec Kit · PostGIS</span><span class="c-grade">PLAN</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li><li><button type="button" class="tcard g-plan " data-id="shop" data-pack="next" data-grade="plan" aria-label="AI 쇼핑 영상, 설계 완료 등급, 자세히 보기">
+<span class="tilt"><span class="frame"><span class="inner">
+<span class="c-head"><span class="c-emb" aria-hidden="true">Rm</span><span class="c-titles"><span class="c-cat">다음 계획</span><span class="c-title">AI 쇼핑 영상</span></span><span class="c-stat"><b>22</b><small>설계 문서</small></span></span>
+<span class="c-art"><span class="c-types"><span class="badge" style="--b:#0b6fd6"><span class="glyph" aria-hidden="true">Rm</span>Remotion</span><span class="badge" style="--b:#1f7a3a"><span class="glyph" aria-hidden="true">Ff</span>FFmpeg</span><span class="badge" style="--b:#336791"><span class="glyph" aria-hidden="true">PG</span>PostgreSQL</span></span><svg class="c-creature" viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bunny"></use></svg><span class="foil" aria-hidden="true"></span></span>
+<span class="c-ribbon"><small>제품 사진 → 숏폼 홍보 영상</small><b>상품 홍보 영상 설계</b></span>
+<span class="c-moves"><span class="mv"><span class="mv-t"><b>비판 검토 2회</b><small>6개 관점 검토를 설계에 반영</small></span></span><span class="mv"><span class="mv-t"><b>진행 상태</b><small>8단계 로드맵, 구현 전</small></span></span></span>
+<span class="c-foot"><span class="c-tools">Codex · Remotion (계획)</span><span class="c-grade">PLAN</span><span class="c-year">2026</span></span>
+</span></span><span class="glare" aria-hidden="true"></span></span>
+</button></li></ul>
+</section>
+<section class="sec" id="characters" aria-labelledby="chars-title">
+<header class="sec-head"><p class="eyebrow">CHARACTERS</p><h2 id="chars-title">프로젝트 캐릭터</h2>
+<p class="sec-lead">프로젝트마다 하는 일과 쓴 기술을 담아 캐릭터를 그렸습니다. 카드 그림에도 같은 캐릭터가 들어갑니다.</p></header>
+<ul class="mons"><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-owl"></use></svg>
+<figcaption><b>조달 공고 검토 도구</b><span>돋보기 안경을 쓰고 공고를 꼼꼼히 읽는 부엉이</span><span class="mon-types"><span class="badge sm" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge sm" style="--b:#4a63d9"><span class="glyph" aria-hidden="true">G</span>Gemini</span><span class="badge sm" style="--b:#8e44ad"><span class="glyph" aria-hidden="true">Rg</span>RAG</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-cat"></use></svg>
+<figcaption><b>한국어 문장 다듬기 도구</b><span>만년필 꼬리로 어색한 문장을 고쳐 쓰는 고양이</span><span class="mon-types"><span class="badge sm" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge sm" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge sm" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-whale"></use></svg>
+<figcaption><b>지혜행정사사무소 홈페이지</b><span>지구본 몸통 위로 4개 국어 말풍선을 띄우는 고래</span><span class="mon-types"><span class="badge sm" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge sm" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge sm" style="--b:#b95835"><span class="glyph" aria-hidden="true">C</span>Claude</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bear"></use></svg>
+<figcaption><b>학교폭력 전문 사이트</b><span>별 방패로 학생을 지키는 곰</span><span class="mon-types"><span class="badge sm" style="--b:#3a8338"><span class="glyph" aria-hidden="true">N</span>Node</span><span class="badge sm" style="--b:#887100"><span class="glyph" aria-hidden="true">JS</span>JavaScript</span><span class="badge sm" style="--b:#b16018"><span class="glyph" aria-hidden="true">CF</span>Cloudflare</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-penguin"></use></svg>
+<figcaption><b>청약 기사 자동화</b><span>NEWS 모자에 신문을 든 펭귄</span><span class="mon-types"><span class="badge sm" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge sm" style="--b:#0c6b48"><span class="glyph" aria-hidden="true">Dj</span>Django</span><span class="badge sm" style="--b:#577f27"><span class="glyph" aria-hidden="true">Ce</span>Celery</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-octopus"></use></svg>
+<figcaption><b>숏폼 영상 제작 도구</b><span>필름 다리로 장면을 이어 붙이는 문어</span><span class="mon-types"><span class="badge sm" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge sm" style="--b:#1f7a3a"><span class="glyph" aria-hidden="true">Ff</span>FFmpeg</span><span class="badge sm" style="--b:#4a63d9"><span class="glyph" aria-hidden="true">G</span>Gemini</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-chameleon"></use></svg>
+<figcaption><b>Figma → 코드 파이프라인</b><span>디자인 레이어 세 장을 등에 진 카멜레온</span><span class="mon-types"><span class="badge sm" style="--b:#2f6fb8"><span class="glyph" aria-hidden="true">TS</span>TypeScript</span><span class="badge sm" style="--b:#b95835"><span class="glyph" aria-hidden="true">M</span>MCP</span><span class="badge sm" style="--b:#2b844b"><span class="glyph" aria-hidden="true">Pw</span>Playwright</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-crab"></use></svg>
+<figcaption><b>로컬 UI 디자인 편집기</b><span>크롭 모서리 모양 집게로 화면을 자르는 게</span><span class="mon-types"><span class="badge sm" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span><span class="badge sm" style="--b:#56607a"><span class="glyph" aria-hidden="true">Ex</span>Express</span><span class="badge sm" style="--b:#b95835"><span class="glyph" aria-hidden="true">M</span>MCP</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-turtle"></use></svg>
+<figcaption><b>법원 경매 권리분석</b><span>등딱지 위 저울로 두 판단을 견주는 거북</span><span class="mon-types"><span class="badge sm" style="--b:#2e72d5"><span class="glyph" aria-hidden="true">Py</span>Python</span><span class="badge sm" style="--b:#00796b"><span class="glyph" aria-hidden="true">F</span>FastAPI</span><span class="badge sm" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-squirrel"></use></svg>
+<figcaption><b>아파트 매물 추적</b><span>아파트를 안고 매일 변동을 살피는 다람쥐</span><span class="mon-types"><span class="badge sm" style="--b:#00796b"><span class="glyph" aria-hidden="true">F</span>FastAPI</span><span class="badge sm" style="--b:#336791"><span class="glyph" aria-hidden="true">PG</span>PostgreSQL</span><span class="badge sm" style="--b:#2b844b"><span class="glyph" aria-hidden="true">Pw</span>Playwright</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bat"></use></svg>
+<figcaption><b>미디어 변환기</b><span>헤드폰을 끼고 음원 형식을 바꾸는 박쥐</span><span class="mon-types"><span class="badge sm" style="--b:#6a44d8"><span class="glyph" aria-hidden="true">K</span>Kotlin</span><span class="badge sm" style="--b:#00796b"><span class="glyph" aria-hidden="true">F</span>FastAPI</span><span class="badge sm" style="--b:#1f7a3a"><span class="glyph" aria-hidden="true">Ff</span>FFmpeg</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-firefly"></use></svg>
+<figcaption><b>무인매장 관제</b><span>카메라 렌즈 눈으로 밤새 매장을 지키는 반딧불이</span><span class="mon-types"><span class="badge sm" style="--b:#c93a1b"><span class="glyph" aria-hidden="true">Y</span>YOLO</span><span class="badge sm" style="--b:#0d8266"><span class="glyph" aria-hidden="true">AI</span>GPT</span><span class="badge sm" style="--b:#2b2f45"><span class="glyph" aria-hidden="true">Nx</span>Next.js</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-giraffe"></use></svg>
+<figcaption><b>부동산 정책 대시보드</b><span>몸의 무늬가 막대그래프인 기린</span><span class="mon-types"><span class="badge sm" style="--b:#2f6b9a"><span class="glyph" aria-hidden="true">GIS</span>PostGIS</span><span class="badge sm" style="--b:#5b4bb7"><span class="glyph" aria-hidden="true">V</span>pgvector</span><span class="badge sm" style="--b:#127e9a"><span class="glyph" aria-hidden="true">R</span>React</span></span></figcaption></figure></li><li><figure class="mon"><svg viewBox="-6 -6 172 172" aria-hidden="true" focusable="false"><use href="#cr-bunny"></use></svg>
+<figcaption><b>AI 쇼핑 영상</b><span>카메라로 상품 사진을 찍는 토끼</span><span class="mon-types"><span class="badge sm" style="--b:#0b6fd6"><span class="glyph" aria-hidden="true">Rm</span>Remotion</span><span class="badge sm" style="--b:#1f7a3a"><span class="glyph" aria-hidden="true">Ff</span>FFmpeg</span><span class="badge sm" style="--b:#336791"><span class="glyph" aria-hidden="true">PG</span>PostgreSQL</span></span></figcaption></figure></li></ul>
+</section>
+</main>
+<footer class="site-foot">
+<p>© 2026 정재훈 · <a href="https://github.com/himangga01" target="_blank" rel="noopener">github.com/himangga01</a></p>
+<p class="small">카드와 캐릭터는 직접 디자인했습니다. 기술 이름은 각 소유자의 상표입니다.</p>
+</footer>
+
+<dialog class="opening" id="opening" aria-labelledby="op-title">
+<div class="op-top"><h2 id="op-title">카드 열기</h2><button type="button" class="icon-btn" data-close aria-label="닫기">✕</button></div>
+<div class="op-stage">
+<div class="op-pack-wrap">
+<div class="op-pack" tabindex="0" role="button" aria-describedby="op-hint">
+<div class="op-pack-top"><span class="crimp" aria-hidden="true"></span></div>
+<div class="op-pack-body"><span class="pack-brand" aria-hidden="true">DEV PACK</span><span class="pack-mon" aria-hidden="true"><svg viewBox="-6 -6 172 172" focusable="false"><use href="#cr-owl"></use></svg></span><span class="pack-name"></span><span class="crimp" aria-hidden="true"></span></div>
+<div class="tear-line" aria-hidden="true"></div>
+<div class="finger" aria-hidden="true"></div>
+</div>
+</div>
+<div class="op-reveal" hidden>
+<div class="op-rays" aria-hidden="true"></div>
+<div class="op-slot"></div>
+<p class="op-tap">카드를 누르거나 → 키로 다음 카드</p>
+</div>
+<div class="op-result" hidden>
+<p class="op-result-title"></p>
+<ul class="op-grid"></ul>
+</div>
+<div class="op-flash" aria-hidden="true"></div>
+</div>
+<p class="op-hint" id="op-hint">포장 윗부분을 옆으로 밀어 여세요</p>
+<div class="op-actions">
+<button type="button" class="btn" data-open-now>바로 열기</button>
+<button type="button" class="btn ghost" data-skip>결과 바로 보기</button>
+<button type="button" class="btn ghost" data-other hidden>다른 분야 보기</button>
+<a class="btn ghost" href="#all" data-to-all hidden>전체 프로젝트</a>
+</div>
+<p class="sr-only" aria-live="polite" id="op-live"></p>
+</dialog>
+
+<dialog class="detail" id="detail" aria-labelledby="dt-title">
+<div class="dt-top"><button type="button" class="icon-btn" data-prev aria-label="이전 프로젝트">←</button><button type="button" class="icon-btn" data-next aria-label="다음 프로젝트">→</button><button type="button" class="icon-btn" data-close aria-label="닫기">✕</button></div>
+<div class="dt-body">
+<div class="dt-card"></div>
+<div class="dt-text">
+<p class="dt-meta"></p>
+<h2 id="dt-title"></h2>
+<p class="dt-summary"></p>
+<dl class="case-dl dt-case"></dl>
+<p class="dt-status"></p>
+<div class="dt-types"></div>
+<div class="case-links dt-links"></div>
+</div>
+</div>
+</dialog>
+</body>
+</html>
